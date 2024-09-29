@@ -75,7 +75,7 @@ print(my_list)
 value_str = "hello"
 
 index = 0
-while index <len(value_str):
+while index < len(value_str):
     print(value_str[index])
     index += 1
 
