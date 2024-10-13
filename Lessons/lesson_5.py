@@ -1,4 +1,5 @@
 ############################### STRING ###############################
+import keyword
 
 # value_str = 'hello' # ітерований, ііндексований та незмінюваний тип даних.
 
@@ -80,4 +81,3 @@ some_file = "C/:My Computer/SomeFolder/file.png"
 # print(alphabet)
 
 
-import
