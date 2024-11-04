@@ -18,14 +18,7 @@ user_string = input("Enter your value: ")
 #         print(False)
 # else:
 #     print(False)
-if user_string.isidentifier():
-    for i in user_string:
-        list_1 = keyword.kwlist
-        if i == user_string.isdigit():
-        print(False)
-    elif i == string.punctuation:
-        print(False)
-    elif i
+
 
 
 
