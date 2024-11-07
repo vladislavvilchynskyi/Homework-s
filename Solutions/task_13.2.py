@@ -16,12 +16,12 @@ class Counter:
 
    def step_up(self):
        if self.current >= self.max_value:
-           raise ValueError(f"Oh Bro that's enough - {self.current}")
+           raise ValueError(f"Oh Bro that's enough!")
        self.current += 1
 
    def step_down(self):
        if self.current <= self.min_value:
-           raise ValueError(f'Oh Bro it`s not enough - {self.current}')
+           raise ValueError(f'Oh Bro it`s not enough!')
        self.current -= 1
 
    def get_current(self):
