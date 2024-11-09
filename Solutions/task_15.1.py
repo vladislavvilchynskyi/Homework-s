@@ -1,6 +1,6 @@
 from msilib import add_data
 
-
+############################################### SOLUTION #1 ########################################################
 class Rectangle:
 
     def __init__(self, width, height):
@@ -20,15 +20,16 @@ class Rectangle:
         return self.get_square() == other.get_square()
 
     def __add__(self, other):
-        add_square = self.get_square() + other.get_square()
-        return Rectangle(self.width, add_square / self.width)
+        add_square_1 = self.add_square(other)
+        return Rectangle(self.width, add_square_1/ self.width)
 
     def __mul__(self, n):
-        mul_square = self.get_square() * n
-        return Rectangle(self.width, mul_square / self.width)
+        mul_square_2 = self.mul_square(n)
+        return Rectangle(self.width, mul_square_2 / self.width)
 
     def __str__(self):
         return f'Bro, It`s your new Rectangle:\nWidth: {self.width}\nHeight: {self.height}\nSee you later :*\n\n'
+
 
 
 r1 = Rectangle(2, 4)
