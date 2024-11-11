@@ -13,10 +13,10 @@ try:
 except TooMuchStudentError as e:
     print(e)
 
-print(f'Old group:\n{gr}\n-----------------------------')
+print(f'Old group:{gr}\n-----------------------------')
 
 assert gr.find_student('Jobs') == st1, 'Test1'
 assert gr.find_student('Jobs2') is None, 'Test2'
 
 gr.delete_student('Taylor')
-print(gr)
+print(f'New group:{gr}')
